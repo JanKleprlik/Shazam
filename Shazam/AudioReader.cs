@@ -20,6 +20,7 @@ namespace Shazam
 			if (path.EndsWith(".wav"))
 			{
 				Sound = new WavFormat();
+				//Check if the beginning starts with RIFF (currently only supported format of wav files)
 				if (!Sound.IsCorrectFormat(new []{ data[0], data[1], data[2], data[3] }))
 				{
 					throw new ArgumentException($"File {path} formatted wrongly, not a 'wav' format.");

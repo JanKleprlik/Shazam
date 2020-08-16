@@ -13,6 +13,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Remove="Visualiser\MusicModes\CutOffFrequenciesMode.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="BlankPage1.xaml" />
     <None Remove="Helpers\Extensions\SwapExtension.xaml" />
   </ItemGroup>

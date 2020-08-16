@@ -7,9 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
-    <PackageReference Include="MSTest.TestAdapter" Version="2.1.0" />
-    <PackageReference Include="MSTest.TestFramework" Version="2.1.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.7.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="2.1.2" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.1.2" />
     <PackageReference Include="coverlet.collector" Version="1.2.0" />
   </ItemGroup>
 
@@ -18,22 +18,19 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Songs\ass.wav">
+    <None Update="Songs\10500Hz.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Songs\Audio-LSD.wav">
+    <None Update="Songs\400Hz.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Songs\chameleon.wav">
+    <None Update="Songs\Avicii.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Songs\gymno.wav">
+    <None Update="Songs\Hertz.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Songs\ppl.wav">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Songs\sifflet.wav">
+    <None Update="Songs\Piano.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Songs\World.wav">

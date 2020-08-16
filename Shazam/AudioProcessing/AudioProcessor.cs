@@ -81,10 +81,11 @@ namespace Shazam.AudioProcessing
 				dataDouble[i] = data[i];
 			}
 
-			dataDouble = ButterworthFilter.Butterworth(dataDouble, sampleRate, cutOff);
+			
+			var dataDoubleDownsampled = ButterworthFilter.Butterworth(dataDouble, sampleRate, cutOff); //4k samples
 
 			//make average of every downFactor number of samples
-			for (int i = 0; i < dataDouble.Length / downFactor; i++)
+			for (int i = 0; i < dataDoubleDownsampled.Length / downFactor; i++) //1k samples
 			{
 				double sum = 0;
 				for (int j = 0; j < downFactor; j++)
@@ -96,6 +97,7 @@ namespace Shazam.AudioProcessing
 
 			return res;
 		}
+
 		#region  FFT
 		/// <summary>
 		/// Recursive DFT
@@ -222,11 +224,9 @@ namespace Shazam.AudioProcessing
 			//Normalize(data);
 		}
 		#endregion
-
-
-
+		
 		#region  WINDOWS
-		public static double[] GenerateHammingWindow(uint windowSize)
+		public static double[] GenerateHammingWindow(int windowSize)
 		{
 			var Window = new double[windowSize];
 

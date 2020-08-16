@@ -3,6 +3,7 @@ using SFML.Audio;
 using SFML.Graphics;
 using SFML.System;
 using Shazam.AudioProcessing;
+using Shazam.AudioProcessing.Server;
 using tools = Shazam.Tools.Tools;
 
 namespace Shazam.Visualiser.MusicModes
@@ -19,7 +20,7 @@ namespace Shazam.Visualiser.MusicModes
 			this.downSampleCoef = downSampleCoef;
 
 
-			window = AudioProcessor.GenerateHammingWindow((uint) (BufferSize/downSampleCoef));
+			window = AudioProcessor.GenerateHammingWindow((int) (BufferSize/downSampleCoef));
 			bin = new double[(int)(BufferSize*(2d/downSampleCoef))];
 
 			Song.Loop = true;

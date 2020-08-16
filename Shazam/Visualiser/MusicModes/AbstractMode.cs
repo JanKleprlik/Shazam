@@ -24,7 +24,7 @@ namespace Shazam.Visualiser.MusicModes
 		#endregion
 
 		#region Properties
-		protected Sound Song { get;}
+		protected Sound Song { get; set; }
 		protected short[] Samples { get; }
 		protected uint SampleRate { get; }
 		protected uint SampleCount { get; }
@@ -38,9 +38,11 @@ namespace Shazam.Visualiser.MusicModes
 
 		public virtual void Quit()
 		{
-			Song.Stop();
-			Song.Dispose();
-			
+			if (Song != null)
+			{
+				Song.Stop();
+				Song.Dispose();
+			}
 		}
 
 		#endregion

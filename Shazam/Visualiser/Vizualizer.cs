@@ -17,7 +17,6 @@ namespace Shazam.Visualiser
 	{
 		Amplitude,
 		Frequencies,
-		CutOffFrequencies,
 		Spectogram
 	}
 
@@ -39,10 +38,8 @@ namespace Shazam.Visualiser
 					return new AmplitudeMode(sb);
 				case VisualisationModes.Frequencies:
 					return new FrequenciesMode(sb, downSampleCoef);
-				case VisualisationModes.CutOffFrequencies:
-					return new CutOffFrequenciesMode(sb);
 				case VisualisationModes.Spectogram:
-					return new Spectogram(sb);
+					return new Spectogram(sb, downSampleCoef);
 				default:
 					throw new ArgumentException($"Mode {vm.ToString()} is not supported");
 			}
@@ -53,8 +50,8 @@ namespace Shazam.Visualiser
 
 		public void Run()
 		{
-			var mode = new SFML.Window.VideoMode(1224, 400);
-			var window = new SFML.Graphics.RenderWindow(mode, "Shazam");
+			var mode = new SFML.Window.VideoMode(1224, 800);
+			var window = new SFML.Graphics.RenderWindow(mode, visualisation.GetType().ToString());
 			window.KeyPressed += Window_KeyPressed;
 			window.SetFramerateLimit(30);
 
@@ -65,7 +62,6 @@ namespace Shazam.Visualiser
 				window.Clear();
 
 				// Process events
-				//window.DispatchEvents();
 				window.DispatchEvents();
 				visualisation.Draw(window);
 				// Finally, display the rendered frame on screen

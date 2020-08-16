@@ -1,6 +1,7 @@
 ﻿using SFML.Audio;
 using SFML.Graphics;
 using SFML.System;
+using Shazam.AudioProcessing.Server;
 
 namespace Shazam.Visualiser.MusicModes
 {
@@ -29,6 +30,12 @@ namespace Shazam.Visualiser.MusicModes
 		public AmplitudeMode(SoundBuffer sb) : base(sb)
 		{
 			VA = new VertexArray(PrimitiveType.LineStrip, BufferSize);
+			font = new Font("Resources/sansation.ttf");
+			timeText = new Text("0", font);
+			timeText.Position = new Vector2f(10f, 10f);
+			timeText.CharacterSize = 30;
+
+
 			Song.Loop = true;
 			Song.Play();
 		}
@@ -37,16 +44,20 @@ namespace Shazam.Visualiser.MusicModes
 
 
 		private VertexArray VA;
+		private SFML.Graphics.Text timeText;
+		private Font font;
 
 
 		public override void Draw(RenderWindow window)
 		{
 			window.Draw(VA);
+			window.Draw(timeText);
 		}
 
 		public override void Update()
 		{
 			int offset = (int) (Song.PlayingOffset.AsSeconds() * SampleRate);
+			timeText.DisplayedString = Song.PlayingOffset.AsSeconds().ToString();
 			if (offset + BufferSize < SampleCount)
 			{
 				if (ChannelCount == 2)

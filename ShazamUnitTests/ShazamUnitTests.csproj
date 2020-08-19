@@ -27,6 +27,9 @@
     <None Update="Songs\Avicii.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="Songs\Coldplay.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Songs\Hertz.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

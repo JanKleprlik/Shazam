@@ -19,7 +19,7 @@ namespace Shazam.Visualiser.Spectograms
 			//windowSize = (int)(BufferSize / downSampleCoef);
 			window = AudioProcessor.GenerateHammingWindow((int) (BufferSize/downSampleCoef));
 			const int secInFrame = 60;
-			secondsStop = (int)(secInFrame / ((double)BufferSize / SampleRate));
+			rendersTillStop = (int)(secInFrame / ((double)BufferSize / SampleRate));
 			this.downSampleCoef = downSampleCoef;
 			bins = new double[(int) (BufferSize*(2d/downSampleCoef))]; //*2 because of Re+Im
 
@@ -60,14 +60,14 @@ namespace Shazam.Visualiser.Spectograms
 			{
 				var color = IntensityToColor(data[i * 2], data[i * 2 + 1], 2048);
 
-				VA[i] = new Vertex(basePosition + new Vector2f(0f, (float) (-i/Yscale)), color);
+				VA[i] = new Vertex(basePosition + new Vector2f(0, (float) (-i/Yscale)), color);
 			}
 		}
 
 		private double[] bins;
 		private double[] window;
 		//private int windowSize;
-		private int secondsStop;
+		private int rendersTillStop;
 		private int offset = 0;
 		private int downSampleCoef;
 		private bool isFirstFrame = true;
@@ -86,7 +86,7 @@ namespace Shazam.Visualiser.Spectograms
 			double[] samples = new double[BufferSize];
 
 
-			for (int i = 0; i < secondsStop; i++)
+			for (int i = 0; i < rendersTillStop; i++)
 			{
 				if (offset + BufferSize < SampleCount)
 				{
@@ -106,8 +106,8 @@ namespace Shazam.Visualiser.Spectograms
 					}
 
 					AudioProcessor.FFT(bins); //apply fft
-
-					Render(bins, new Vector2f(100 + i, 700), (int)BufferSize / (2 * downSampleCoef));
+																//1024 = WIDTH			700=HEIGHT
+					Render(bins, new Vector2f(100 + i*(1024/rendersTillStop), 700), (int)BufferSize / (2 * downSampleCoef));
 					window.Draw(VA);
 				}
 				else

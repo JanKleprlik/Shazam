@@ -1,0 +1,13 @@
+﻿## TODO:
+- [x] ~~Create raw amplitude visualizer.~~
+- [x] ~~Create non scaled frequency visualizer.~~
+- [x] ~~Modify frequency visualizer to be scalable.~~
+- [x] ~~Create spectrum visualizer for the whole song.~~
+- [x] ~~Modify frequency visualizer to be scalable.~~
+- [x] ~~Get bin average from the whole song.~~
+- [x] ~~Remember time-frequency points.~~
+- [] Create time-frequency fiftlets: leading + 4
+- [] Create addresses (triplets) from time-fequency fiftlets: -3rd position
+- [] Connect addresses with doubles (abs time of anchor; songID)
+- [] OPTIONAL: Modify addresses and time-frequency points into integers
+- [] Secure time coherency

@@ -17,8 +17,6 @@ namespace Shazam
 	{
         public static void Main()
         {
-
-			//TODO: tweak constants and coefitients
 			Shazam s = new Shazam();
 			
 			s.AddNewSong("Songs/Avicii.wav");

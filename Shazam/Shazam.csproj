@@ -26,15 +26,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Page Include="BlankPage1.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Helpers\Extensions\SwapExtension.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-  </ItemGroup>
-
-  <ItemGroup>
     <None Update="Resources\sansation.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

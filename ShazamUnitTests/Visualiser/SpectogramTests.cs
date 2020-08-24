@@ -72,6 +72,16 @@ namespace ShazamUnitTests.Visualiser
 			window.Run();
 		}
 
+		[TestMethod]
+		public void Spectogram_400Hz()
+		{
+			var audio = AudioReader.GetSound("Songs/400Hz.wav");
+			if (audio.Channels == 2)
+				AudioProcessor.StereoToMono(audio);
+
+			var window = new Visualizer(audio.Data, audio.Channels, audio.SampleRate, VisualisationModes.Spectogram);
+			window.Run();
+		}
 		/*/
 		[TestMethod]
 		public void Spectogram_400Hz()

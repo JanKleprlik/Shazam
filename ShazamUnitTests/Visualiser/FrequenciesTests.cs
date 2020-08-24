@@ -58,5 +58,15 @@ namespace ShazamUnitTests.Visualiser
 			var window = new Visualizer(audio.Data, audio.Channels, audio.SampleRate, VisualisationModes.Frequencies, downSampleCoef: 4);
 			window.Run();
 		}
+
+		[TestMethod]
+		public void Frequency_400Hz()
+		{
+			var audio = AudioReader.GetSound("Songs/400Hz.wav");
+			if (audio.Channels == 2)
+				AudioProcessor.StereoToMono(audio);
+			var window = new Visualizer(audio.Data, audio.Channels, audio.SampleRate, VisualisationModes.Frequencies);
+			window.Run();
+		}
 	}
 }

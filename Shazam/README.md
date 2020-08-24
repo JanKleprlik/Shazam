@@ -6,8 +6,8 @@
 - [x] ~~Modify frequency visualizer to be scalable.~~
 - [x] ~~Get bin average from the whole song.~~
 - [x] ~~Remember time-frequency points.~~
-- [] Create time-frequency fiftlets: leading + 4
-- [] Create addresses (triplets) from time-fequency fiftlets: -3rd position
-- [] Connect addresses with doubles (abs time of anchor; songID)
-- [] OPTIONAL: Modify addresses and time-frequency points into integers
-- [] Secure time coherency
+- [x] Create time-frequency fiftlets: leading + 4
+- [x] Create addresses (triplets) from time-fequency fiftlets: -3rd position
+- [x] Connect addresses with doubles (abs time of anchor; songID)
+- [x] OPTIONAL: Modify addresses and time-frequency points into integers
+- [x] Secure time coherency

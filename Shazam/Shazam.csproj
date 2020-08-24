@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <None Remove="BlankPage1.xaml" />
+    <None Remove="Fingerprints\Fingerprints.xaml" />
     <None Remove="Helpers\Extensions\SwapExtension.xaml" />
   </ItemGroup>
 
@@ -26,6 +27,27 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="Fingerprints\1.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Fingerprints\2.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Fingerprints\3.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Fingerprints\4.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Fingerprints\5.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Fingerprints\6.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Fingerprints\Fingerprint.md">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Resources\sansation.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -33,9 +55,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Songs\400Hz.wav">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Songs\AudioLSD.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Songs\Avicii.wav">
@@ -70,6 +89,12 @@
   <ItemGroup>
     <Folder Include="AudioProcessing\Client\" />
     <Folder Include="Resources\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Include="Fingerprints\Fingerprints.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
 
 </Project>

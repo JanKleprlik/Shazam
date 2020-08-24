@@ -172,6 +172,7 @@ namespace Shazam
 				}
 
 				data = ShortArrayToDoubleArray(recorder.SoundBuffer.Samples);
+				recorder.SoundBuffer.Dispose(); //dispose buffer manually
 			}
 
 			#endregion
@@ -179,7 +180,13 @@ namespace Shazam
 			List<Tuple<uint, uint>> timeFrequencyPoints;
 			#region Creating Time-frequency points
 			int bufferSize = windowSize / downSampleCoef;
-			timeFrequencyPoints= CreateTimeFrequencyPoints(bufferSize, data, coefficient:1.1); //set higher coefficient because microphone has lower sensitivity
+			timeFrequencyPoints= CreateTimeFrequencyPoints(bufferSize, data, coefficient:0.9); //set higher coefficient because microphone has lower sensitivity
+			/*
+			foreach (var TFpoint in timeFrequencyPoints)
+			{
+				Console.WriteLine($"Time: {TFpoint.Item1} Freq: {TFpoint.Item2}");
+			}
+			*/
 			#endregion
 
 			Dictionary<uint, Dictionary<uint, List<uint>>> filteredSongs;
@@ -203,22 +210,27 @@ namespace Shazam
 			var deltas = GetDeltas(filteredSongs, recordAddresses);
 
 			//pick the songID with highest delta
-			finalSong = FilterLongestDelta(deltas);
+			finalSong = MaximizeTimeCoherency(deltas);
 			#endregion
 
 			return finalSong.ToString();
 		}
 
-		private uint FilterLongestDelta(Dictionary<uint, uint> deltas)
+		/// <summary>
+		/// 
+		/// </summary>
+		/// <param name="deltas">[songID, Num of time coherent notes]</param>
+		/// <returns></returns>
+		private uint MaximizeTimeCoherency(Dictionary<uint, int> deltas)
 		{
 			uint songID = 0; //dummy initialization
-			uint longestDelta = 0;
+			int longestCoherency = 0;
 			bool initialized = false;
 			foreach (var pair in deltas)
 			{
-				if (pair.Value > longestDelta)
+				if (pair.Value > longestCoherency)
 				{
-					longestDelta = pair.Value;
+					longestCoherency = pair.Value;
 					songID = pair.Key;
 					initialized = true;
 				}
@@ -231,24 +243,28 @@ namespace Shazam
 			
 		}
 
-		private Dictionary<uint, uint> GetDeltas(Dictionary<uint, Dictionary<uint, List<uint>>> filteredSongs, Dictionary<uint, List<uint>> recordAddresses)
+		private Dictionary<uint, int> GetDeltas(Dictionary<uint, Dictionary<uint, List<uint>>> filteredSongs, Dictionary<uint, List<uint>> recordAddresses)
 		{
 			//[songID, delta]
-			Dictionary<uint, uint> maxDeltas = new Dictionary<uint, uint>();
+			Dictionary<uint, int> maxTimeCoherentNotes = new Dictionary<uint, int>();
 			foreach (var songID in filteredSongs.Keys)
 			{
 				//[delta, occurence]
-				Dictionary<uint, int > songDeltasQty = new Dictionary<uint, int>();
+				Dictionary<long, int > songDeltasQty = new Dictionary<long, int>();
 				foreach (var address in recordAddresses.Keys)
 				{
 					if (filteredSongs[songID].ContainsKey(address))
 					{
-						foreach (var absSongAnchTime in filteredSongs[songID][address]) //foreach AbsSongAnchorTime at specific address
+						/*
+						 * POZN: u 400Hz písničky je ve filteredSongs 5 různejch adres
+						 *			- to je kvůli tomu že TGZ má 5 pointů, takže musí vzniknout právě 5 offsetů
+						 */
+						foreach (var absSongAnchTime in filteredSongs[songID][address]) //foreach AbsSongAnchorTime at specific address 
 						{
 							foreach (var absRecAnchTime in recordAddresses[address]) //foreach AbsRecordAnchorTime at specific address
 							{
-								//satisfies: "songDelta >= recordDelta"	because song should be longer 10 secs
-								uint delta = absSongAnchTime - absRecAnchTime;
+								//delta can be negative (RecTime = 8 with mapped SongTime = 2)
+								long delta = (long)absSongAnchTime - (long)absRecAnchTime;
 								if (!songDeltasQty.ContainsKey(delta))
 									songDeltasQty.Add(delta, 0);
 								songDeltasQty[delta]++;
@@ -256,28 +272,26 @@ namespace Shazam
 						}
 					}
 				}
-
-				//get max delta
-				uint maxDelta = MaximizeDelta(songDeltasQty);
-				maxDeltas.Add(songID, maxDelta);
+				//TODO: replace Dictionary with list of tuples with extension to find max
+				//get number of notes that are coherent with the most deltas (each note has same delta from start of the song)
+				int timeCohNotes = MaximizeDelta(songDeltasQty);
+				maxTimeCoherentNotes.Add(songID, timeCohNotes);
 			}
-			return maxDeltas;
+			return maxTimeCoherentNotes;
 		}
 
-		private uint MaximizeDelta(Dictionary<uint, int> deltasQty)
+		private int MaximizeDelta(Dictionary<long, int> deltasQty)
 		{
-			uint delta = 0;
 			int maxOccrence = 0;
 			foreach (var pair in deltasQty)
 			{
 				if (pair.Value > maxOccrence)
 				{
-					delta = pair.Key;
 					maxOccrence = pair.Value;
 				}
 			}
 
-			return delta;
+			return maxOccrence;
 		}
 
 		private Dictionary<uint, Dictionary<uint, List<uint>>> FilterSongs(Dictionary<uint, List<uint>> recordAddresses, Dictionary<ulong, int> quantities)
@@ -600,17 +614,10 @@ namespace Shazam
 					uint address = BuildAddress(anchorFreq, pointFreq, pointTime - anchorTime);
 
 					if (!res.ContainsKey(address)) //create new instance if it doesnt exist
-					{
-						res.Add(address, new List<uint>() { anchorTime});
-					}
-					else //add Anchor time to the list
-					{
-						res[address].Add(anchorTime);
-					}
+						res.Add(address, new List<uint>());
+					res[address].Add(anchorTime); //add Anchor time to the list
 				}
-
 			}
-
 			return res;
 		}
 

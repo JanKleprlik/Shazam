@@ -20,6 +20,6 @@
 - [x] Create loading of song metadata
 - [x] Create output of song found metadat
 - [x] UPDATE filepaths : maybe add them as constants
-- [] Add console line interface: Add new song, Recognise song, list song database (metadata)
+- [x] Add console line interface: Add new song, Recognise song, list song database (metadata)
 - [] Add some multithread action
 - [x] Review code

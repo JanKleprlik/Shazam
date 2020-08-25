@@ -93,6 +93,9 @@
     <None Update="Resources\Songs\Hertz.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="Resources\Songs\Home.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Resources\Songs\NoSleep.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

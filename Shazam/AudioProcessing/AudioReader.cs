@@ -15,6 +15,11 @@ namespace Shazam.AudioProcessing.Server
 {
 	public class AudioReader
 	{
+		/// <summary>
+		/// Creates AudioFormat from an audio file
+		/// </summary>
+		/// <param name="path">Location of the audio file</param>
+		/// <returns>Audio format with parsed information</returns>
 		public static IAudioFormat GetSound(string path)
 		{
 			byte[] data = File.ReadAllBytes(path);
@@ -51,6 +56,11 @@ namespace Shazam.AudioProcessing.Server
 			return Sound;
 		}
 
+		/// <summary>
+		/// Finds offset of audio data in metadata 
+		/// </summary>
+		/// <param name="data"></param>
+		/// <returns></returns>
 		private static int FindDataOffset(byte[] data)
 		{
 			for (int i = 0; i < data.Length - 3; i++)
@@ -67,6 +77,11 @@ namespace Shazam.AudioProcessing.Server
 			throw new ArgumentException("Part with data not found.");
 		}
 
+		/// <summary>
+		/// Transforms byte audio data into short audio data
+		/// </summary>
+		/// <param name="data"></param>
+		/// <returns></returns>
 		private static short[] GetSoundDataFromBytes(byte[] data)
 		{
 			short[] dataShorts = new short[data.Length / 2];

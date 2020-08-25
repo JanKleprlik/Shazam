@@ -45,12 +45,10 @@ namespace Shazam.Visualiser.Spectograms
 			else if (decibel > 255)
 			{
 				colorIntensity = 255;
-				//Console.WriteLine($"ABOVE: {decibel} : 255");
 			}
 			else
 			{
 				colorIntensity = (byte)(int)decibel;
-				//Console.WriteLine($"{decibel} : {colorIntensity}");
 			}
 			
 			return new Color(colorIntensity,colorIntensity,colorIntensity);

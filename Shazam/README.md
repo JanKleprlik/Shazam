@@ -11,8 +11,15 @@
 - [x] Connect addresses with doubles (abs time of anchor; songID)
 - [x] OPTIONAL: Modify addresses and time-frequency points into integers
 - [x] Secure time coherency
-- [] Modify Adding song without ID - compute the ID
-- [] Fix saving fingerprints
-- [] Deattach .wav song flies from git
-- [] Load new songs
-- [] Review code
+- [x] Modify Adding song without ID - compute the ID
+- [x] Fix saving fingerprints
+- [x] Deattach .wav song flies from git
+- [x] Load new songs
+- [x] Load fingerprint database at Shazam constructor + remember max songID
+- [] Create user docummentation README
+- [x] Create loading of song metadata
+- [x] Create output of song found metadat
+- [x] UPDATE filepaths : maybe add them as constants
+- [] Add console line interface: Add new song, Recognise song, list song database (metadata)
+- [] Add some multithread action
+- [x] Review code

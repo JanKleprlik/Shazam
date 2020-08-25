@@ -77,7 +77,7 @@ namespace Shazam.Visualiser.MusicModes
 				bin[i * 2] = cutOffData[i] * window[i];
 			}
 
-			AudioProcessor.FFT(bin);
+			FastFourierTransformation.FFT(bin);
 
 			for (uint i = 0; i < BufferSize / (2*downSampleCoef); i++)
 			{

@@ -105,7 +105,7 @@ namespace Shazam.Visualiser.Spectograms
 						bins[index * 2 + 1] = 0d; //set 0s for Img complex values
 					}
 
-					AudioProcessor.FFT(bins); //apply fft
+					FastFourierTransformation.FFT(bins); //apply fft
 																//1024 = WIDTH			700=HEIGHT
 					Render(bins, new Vector2f(100 + i*(1024/rendersTillStop), 700), (int)BufferSize / (2 * downSampleCoef));
 					window.Draw(VA);

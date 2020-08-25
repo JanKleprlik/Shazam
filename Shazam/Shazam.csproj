@@ -18,7 +18,7 @@
 
   <ItemGroup>
     <None Remove="BlankPage1.xaml" />
-    <None Remove="Fingerprints\Fingerprints.xaml" />
+    <None Remove="Resources\Fingerprints\Fingerprints.xaml" />
     <None Remove="Helpers\Extensions\SwapExtension.xaml" />
   </ItemGroup>
 
@@ -27,72 +27,97 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Fingerprints\1.txt">
+    <None Update="Resources\Fingerprints\1.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Fingerprints\2.txt">
+    <None Update="Resources\Fingerprints\10.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Fingerprints\3.txt">
+    <None Update="Resources\Fingerprints\11.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Fingerprints\4.txt">
+    <None Update="Resources\Fingerprints\12.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Fingerprints\5.txt">
+    <None Update="Resources\Fingerprints\2.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Fingerprints\6.txt">
+    <None Update="Resources\Fingerprints\3.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Fingerprints\Fingerprint.md">
+    <None Update="Resources\Fingerprints\4.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Fingerprints\5.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Fingerprints\6.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Fingerprints\7.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Fingerprints\8.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Fingerprints\9.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Fingerprint.md">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Metadata.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Resources\sansation.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Songs\10500Hz.wav">
+    <None Update="Resources\Songs\10500Hz.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Songs\400Hz.wav">
+    <None Update="Resources\Songs\400Hz.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Songs\Avicii.wav">
+    <None Update="Resources\Songs\Avicii.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Songs\Camila Cabello - Havana %28Audio%29 ft. Young Thug-HCjNJDNzw8Y.wav">
+    <None Update="Resources\Songs\Coldplay.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Songs\Coldplay.wav">
+    <None Update="Resources\Songs\Crazy.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Songs\Havana.wav">
+    <None Update="Resources\Songs\Havana.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Songs\Hertz.wav">
+    <None Update="Resources\Songs\Hertz.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Songs\Piano.wav">
+    <None Update="Resources\Songs\NoSleep.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Songs\SameOldLove.wav">
+    <None Update="Resources\Songs\Pauline.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Songs\Selena Gomez - Same Old Love %28Audio%29-naKhF6G36rM.wav">
+    <None Update="Resources\Songs\Piano.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Songs\World.wav">
+    <None Update="Resources\Songs\SameOldLove.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Songs\SummerLullaby.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Songs\TenFeetTall.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Songs\World.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="AudioProcessing\Client\" />
-    <Folder Include="Resources\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Page Include="Fingerprints\Fingerprints.xaml">
+    <Page Include="Resources\Fingerprints\Fingerprints.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>

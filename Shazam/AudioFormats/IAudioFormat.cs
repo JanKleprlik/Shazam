@@ -13,9 +13,7 @@ namespace Shazam.AudioFormats
 		public short BitsPerSample { get; set; }
 		public int NumOfDataSamples { get; set; }
 		//Song PlayData
-		public short[] Data { get; set; } 
-		public double[] DataDouble { get; set; }
-
+		public short[] Data { get; set; }
 		public bool IsCorrectFormat(byte[] data);
 	}
 }

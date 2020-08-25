@@ -11,17 +11,17 @@ namespace Shazam.AudioFormats
 		/// </summary>
 		/// <param name="id">song ID</param>
 		/// <param name="name">Name of the song</param>
-		/// <param name="artist">Creator of the song</param>
-		public Song(uint id, string name, string artist)
+		/// <param name="author">Creator of the song</param>
+		public Song(uint id, string name, string author)
 		{
 			ID = id;
 			Name = name;
-			Artist = artist;
+			Author = author;
 		}
 
 		public uint ID { get; }
 		public string Name { get; }
-		public string Artist { get; }
+		public string Author { get; }
 
 	}
 }

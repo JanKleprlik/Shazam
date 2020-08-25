@@ -118,7 +118,7 @@ namespace ShazamUnitTests.AudioProcessing
 				12123.25, -33	//3rd
 			};
 
-			AudioProcessor.BitReverse(data);
+			FastFourierTransformation.BitReverse(data);
 
 			//positions 1 and 2 (01 && 10) swapped
 			double[] reversedCorrect = new double[]
@@ -148,7 +148,7 @@ namespace ShazamUnitTests.AudioProcessing
 				0d, 0d
 			};
 
-			AudioProcessor.FFT(input);
+			FastFourierTransformation.FFT(input);
 
 			double[] res = new double[]
 			{

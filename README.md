@@ -94,7 +94,7 @@ First we get audio format that we convert from stereo to mono. We do that becaus
 var audio = AudioReader.GetSound("Songs/WithoutYou.wav");
 if (audio.Channels == 2)
     AudioProcessor.StereoToMono(audio);
-var window = new Visualizer(audio.Data, audio.Channels, audio.SampleRate, 		 	                            	 VisualisationModes.Frequencies);
+var window = new Visualizer(audio.Data, audio.Channels, audio.SampleRate, VisualisationModes.Frequencies);
 window.Run();
 ~~~
 

@@ -32,7 +32,7 @@ namespace Shazam
 
 				while (!waiter.IsCompleted)
 				{
-					Console.WriteLine("Recording audio");
+					Console.WriteLine("{0,2} {1}", "", "Recording audio...");
 					Thread.Sleep(2000);
 				}
 

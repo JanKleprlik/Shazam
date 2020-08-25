@@ -43,14 +43,10 @@ namespace Shazam
 			{
 				uint? songID = null;
 				int longestCoherency = 0;
-#if DEBUG
-				Debug.WriteLine($"Total number of notes: {totalNotes}");
-#endif
+				Trace.WriteLine($"   Total number of notes: {totalNotes}");
 				foreach (var pair in deltas)
 				{
-#if DEBUG
-					Debug.WriteLine($"Song ID: {pair.Key} has {pair.Value} coherent notes which is {(double)pair.Value / totalNotes * 100:##.###} %");
-#endif
+					Trace.WriteLine($"   Song ID: {pair.Key} has {pair.Value} coherent notes which is {(double)pair.Value / totalNotes * 100:##.###} %");
 					if (pair.Value > longestCoherency && pair.Value > Constants.CoherentNotesCoef * totalNotes)
 					{
 						longestCoherency = pair.Value;
@@ -200,15 +196,13 @@ namespace Shazam
 					}
 				}
 
-#if DEBUG
 				//Print number of common couples in each song and record
 				foreach (uint songID in res.Keys)
 				{
 					int couples = commonCoupleAmount[songID];
 					int TGZs = commonTGZAmount[songID];
-					Debug.WriteLine($"Song ID: {songID} has {couples} couples where {TGZs} are in target zones: {(double)TGZs / couples * 100:##.###} %");
+					Trace.WriteLine($"   Song ID: {songID} has {couples} couples where {TGZs} are in target zones: {(double)TGZs / couples * 100:##.###} %");
 				}
-#endif
 
 				//remove songs that have low ratio of couples that make a TGZ
 				// also remove songs that have low amount of samples common with recording

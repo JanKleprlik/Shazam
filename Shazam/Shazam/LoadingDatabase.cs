@@ -24,7 +24,7 @@ namespace Shazam
 				if (uint.TryParse(rx.Match(file).Groups["songID"].Value, out uint songID))
 				{
 					LoadSongFingerprint(file, songID);
-					Debug.WriteLine($"Song ID: {songID} was loaded.");
+					Trace.WriteLine($"   Song ID: {songID} was loaded.");
 					maxSongID = Math.Max(maxSongID, songID);
 				}
 			}

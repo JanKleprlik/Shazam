@@ -78,7 +78,6 @@ namespace Shazam
 
 					case "r":
 					case "record":
-						output.WriteLine("{1,2} {0}","Recording started:", "");
 						output.WriteLine("{0,2} {1}", "", s.RecognizeSong());
 						break;
 
@@ -132,7 +131,7 @@ namespace Shazam
 				new Tuple<string, string>("r | record", "record and audio and recognize the song")
 
 			};
-	        o.WriteLine("{2,2} {0,-10} {1,-20}", "COMMAND", "DESCRIPTION","");
+	        o.WriteLine("{2,2} {0,-10} {1,-20}\n", "COMMAND", "DESCRIPTION","");
 
 			foreach (var pair in commandList)
 	        {

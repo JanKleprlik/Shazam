@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Diagnostics;
 using System.IO;
@@ -21,34 +22,122 @@ namespace Shazam
         public static void Main()
 		{
 			Shazam s = new Shazam();
+			TextWriter output = Console.Out;
+			bool isDebug = false;
 
-			string res = s.RecognizeSong();
-			Console.WriteLine(res);
-
-
-
-			/*
-			Shazam s = new Shazam();
-			//s.AddNewSong("Songs/Avicii.wav", 1);
-			//s.AddNewSong("Songs/Coldplay.wav", 2);
-			//s.AddNewSong("Songs/400Hz.wav", 3);
-			//s.AddNewSong("Songs/Hertz.wav", 4);
-			//s.AddNewSong("Songs/Havana.wav", 5);
-			//s.AddNewSong("Songs/SameOldLove.wav", 6);	
-			//s.AddNewSong("Songs/World.wav", 7);
-			//s.AddNewSong("Songs/SummerLullaby.wav", 8);
-			//s.AddNewSong("Songs/Crazy.wav", 9);
-			//s.AddNewSong("Songs/NoSleep.wav", 10);
-			//s.AddNewSong("Songs/Pauline.wav", 11);
-			//s.AddNewSong("Songs/TenFeetTall.wav", 12);
-			
-			for (uint i = 1; i <= 12; i++)
+			output.WriteLine("{1,2} {0}", "Enter 'h' or 'help' for help.","");
+			while (true)
 			{
-				s.LoadSong(i);
-			}
+				string argument = Console.ReadLine();
+				switch (argument.ToLower())
+				{
+					case "a":
+					case "add":
+						output.WriteLine("{1,2} {0}", "Enter name of the song", "");
+						string name = Console.ReadLine();
+						output.WriteLine("{1,2} {0}", "Enter name of the author","");
+						string author = Console.ReadLine();
+						output.WriteLine("{1,2} {0}", "Enter name of the audio file","");
+						string path = Console.ReadLine();
+						AddSong(path, name, author, output, s);
+						break;
+					case "c":
+					case "clear":
+						if(output == Console.Out)
+							Console.Clear();
+						break;
+					case "d":
+					case "debug":
+						if (!isDebug)
+						{
+							isDebug = true;
+							RedirectDebugOutput(output, isDebug);
+							output.WriteLine("{1,2} {0}", "Debug mode activated", "");
+						}
+						else
+						{
+							isDebug = false;
+							RedirectDebugOutput(output, isDebug);
+							output.WriteLine("{1,2} {0}", "Debug mode cancelled", "");
+						}
+						break;
 
-			Console.WriteLine($"Songs ID is : {s.RecognizeSong()}");
-			*/
+					case "h":
+					case "help":
+						WriteHelp(output);
+						break;
+
+					case "l":
+					case "list":
+						s.ListSongs(output);
+						break;
+
+					case "q":
+					case "quit":
+						return;
+
+					case "r":
+					case "record":
+						output.WriteLine("{1,2} {0}","Recording started:", "");
+						output.WriteLine("{0,2} {1}", "", s.RecognizeSong());
+						break;
+
+					default:
+						continue;
+						
+				}
+				
+			}
 		}
+
+
+        private static void RedirectDebugOutput(TextWriter output, bool add)
+        {
+	        if (add)
+	        {
+		        var tl = new TextWriterTraceListener(output);
+		        tl.Name = "customOutput";
+		        Trace.Listeners.Add(tl);
+	        }
+	        else
+	        {
+				Trace.Listeners.Remove("customOutput");
+	        }
+		}
+
+        private static void AddSong(string path, string name, string author, TextWriter o, Shazam s)
+        {
+			try
+			{
+				s.AddNewSong(path,name,author);
+				o.WriteLine("{0,2} {1}", "", $"Song '{name}' added.");
+			}
+			catch (Exception e)
+			{
+				o.WriteLine(e.Message);
+				o.WriteLine("{0,2} {1}", "", $"Adding '{name}' was unsuccessful.");
+			}
+		}
+
+        private static void WriteHelp(TextWriter o)
+        {
+	        Tuple<string, string>[] commandList = 
+	        {
+				new Tuple<string, string>("a | add", "add new song to the database"),
+				new Tuple<string, string>("d | debug", "write debug information"),
+				new Tuple<string, string>("c | clear", "clear the console"),
+				new Tuple<string, string>("h | help", "list all commands"),
+				new Tuple<string, string>("l | list", "list all songs in the database"),
+				new Tuple<string, string>("q | quit", "quit the application"),
+				new Tuple<string, string>("r | record", "record and audio and recognize the song")
+
+			};
+	        o.WriteLine("{2,2} {0,-10} {1,-20}", "COMMAND", "DESCRIPTION","");
+
+			foreach (var pair in commandList)
+	        {
+		        o.WriteLine("{2,2} {0,-10} {1,-20}", pair.Item1, pair.Item2, "");
+	        }
+        }
 	}	
 }

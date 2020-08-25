@@ -33,7 +33,7 @@ namespace Shazam
 		{
 			using (StreamWriter sr = new StreamWriter(metadataPath, true))
 			{
-				//songID;Name;Author
+				//ID;Name;Author
 				sr.WriteLine($"{songID};{name};{author}");
 			}
 		}

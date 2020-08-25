@@ -19,7 +19,7 @@ A **SFML** library for playing, recording and visualizing data will be used.
 
 ## Brief plan
 
-	### Song recognition
+### Song recognition
 
 ​	Client will be able to record 10 seconds sample. This sample will be processed and its fingerprint will be made. Songs from database will be filtered out according to fingerprint resemblance. Songs  with strong fingerprint similarity will be processed further. Time coherency of notes of important notes in songs and recording will be measured and correct song will be returned. If there is not any strong fingerprint resemblance, error note will be returned.
 

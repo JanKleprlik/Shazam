@@ -157,9 +157,11 @@ namespace Shazam
 		/// <param name="output">TextWriter to write the songs into</param>
 		public void ListSongs(TextWriter output)
 		{
+			output.WriteLine("{3,2} {0,-30} {1,-30} {2} \n", "NAME", "AUTHOR", "ID", "");
+
 			foreach (var song in metadata.Values)
 			{
-				output.WriteLine("{2,2} Song: {0,-30} Author: {1,-20}", song.Name, song.Author, "");
+				output.WriteLine("{3,2} {0,-30} {1,-30} {2}", song.Name, song.Author,song.ID, "");
 			}
 		}
 	}

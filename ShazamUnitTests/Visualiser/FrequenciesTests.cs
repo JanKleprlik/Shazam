@@ -68,5 +68,15 @@ namespace ShazamUnitTests.Visualiser
 			var window = new Visualizer(audio.Data, audio.Channels, audio.SampleRate, VisualisationModes.Frequencies);
 			window.Run();
 		}
+
+		[TestMethod]
+		public void Frequency_Avicii()
+		{
+			var audio = AudioReader.GetSound("Songs/Avicii.wav");
+			if (audio.Channels == 2)
+				AudioProcessor.StereoToMono(audio);
+			var window = new Visualizer(audio.Data, audio.Channels, audio.SampleRate, VisualisationModes.Frequencies);
+			window.Run();
+		}
 	}
 }

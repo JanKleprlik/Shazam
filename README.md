@@ -84,7 +84,7 @@ Initiates recording through microphone and then song recognition.
 
 ## Visualiser guide
 
-As a part of this project I have built simple audio visualiser with three different modes. The original purpose of those visualisers was to help me debug audio and algorithms that were applied to audio data. Such as downsampling, FFT, stereo to mono conversions. Another way cooler audio visualiser that I wrote in C++ can be found here [github](**JanKleprlik/AudioVizualizer**).
+As a part of this project I have built simple audio visualiser with three different modes. The original purpose of those visualisers was to help me debug audio and algorithms that were applied to audio data. Such as downsampling, FFT, stereo to mono conversions. Another way cooler audio visualiser that I wrote in C++ can be found here [github](https://github.com/JanKleprlik/AudioVisualiser).
 
 ### Code Example
 

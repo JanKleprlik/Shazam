@@ -58,7 +58,7 @@ namespace Shazam
 
 			#region STEREO
 
-			var audio = AudioReader.GetSound(path);
+			var audio = AudioReader.GetSound("Resources/Songs/"+path);
 
 			#endregion
 
@@ -141,15 +141,26 @@ namespace Shazam
 			uint? finalSongID =  Recogniser.FindBestMatch(database, timeFrequencyPoints);
 
 			stopwatch.Stop();
-			Console.WriteLine($"Song recognized in: {stopwatch.ElapsedMilliseconds} milliseconds");
+					
+			Trace.WriteLine($"   Song recognized in: {stopwatch.ElapsedMilliseconds} milliseconds");
 
 			if (finalSongID == null)
 				return "Recording was unrecognizable.";
 			Song resultSong = metadata[(uint) finalSongID];
 
-			return $"{resultSong.Name} by {resultSong.Artist}";
+			return $"{resultSong.Name} by {resultSong.Author}";
 		}
 
-
+		/// <summary>
+		/// Lists all songs in the database
+		/// </summary>
+		/// <param name="output">TextWriter to write the songs into</param>
+		public void ListSongs(TextWriter output)
+		{
+			foreach (var song in metadata.Values)
+			{
+				output.WriteLine("{2,2} Song: {0,-30} Author: {1,-20}", song.Name, song.Author, "");
+			}
+		}
 	}
 }

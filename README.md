@@ -1,5 +1,6 @@
 # Shazam
 
+
 ### Content
 
 - Overview
@@ -9,9 +10,9 @@
 
 ## Overview
 
-This application is a 'cheap' clone of [Shazam](https://www.shazam.com/). Essentially if you play it a song, it tells you what song it is and who made it.* The song recognition is however implemented with an algorithm that searches very fast. The essence is looking for shared position of multiple important notes rather than comparing recording with each song at every possible point of time.
+This application is a 'cheap' replica of [Shazam](https://www.shazam.com/). Essentially if you play it a song, it tells you what song it is and who made it.<sup>*</sup> The song recognition is however implemented with an algorithm that searches very fast. The essence is looking for shared position of multiple important notes rather than comparing recording with each song at every possible point of time.
 
-*If you are lucky enough and the song is in the database.
+<sup>*</sup>If you are lucky enough and the song is in the database.
 
 ## Installation
 
@@ -25,7 +26,7 @@ This application is a 'cheap' clone of [Shazam](https://www.shazam.com/). Essent
 
 **Steps**
 
-1. Compile project so necessary packages download (**SFML** library) 7
+1. Compile project so necessary packages download (**SFML** library)
 2. Run the application
 
 ## Shazam guide

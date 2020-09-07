@@ -19,7 +19,7 @@ namespace Shazam
 			{
 				//[address;(AbsAnchorTimes)]
 				Dictionary<uint, List<uint>> recordAddresses = CreateRecordAddresses(timeFrequencyPoints);
-				//get quantities of each SongValue to determine wether they make a complete TGZ
+				//get quantities of each SongValue to determine wether they make a complete TGZ (5+ points correspond to the same SongValue)
 				var quantities = GetSongValQuantities(recordAddresses, database);
 
 				//filter songs and addresses that only 
@@ -201,7 +201,9 @@ namespace Shazam
 				{
 					int couples = commonCoupleAmount[songID];
 					int TGZs = commonTGZAmount[songID];
+					//NOTE: result can be more than 100% (some parts of the songs may repeat - refrains)
 					Trace.WriteLine($"   Song ID: {songID} has {couples} couples where {TGZs} are in target zones: {(double)TGZs / couples * 100:##.###} %");
+					
 				}
 
 				//remove songs that have low ratio of couples that make a TGZ
@@ -212,7 +214,10 @@ namespace Shazam
 					//remove song if less than half of samples is not in TGZ
 					//remove songs that don't have enough samples in TGZ
 					//		- min is 1720 * coef (for noise cancellation)
-					if (commonTGZAmount[songID] < 1400 || ratio < Constants.SamplesInTgzCoef)
+					//			- avg 2. samples per bin common (2 out of 6) with about 860 bins per 10 (1000/11.7) seconds = 1720
+
+					if ((commonTGZAmount[songID] < 1400 || ratio < Constants.SamplesInTgzCoef) && //normal songs have a lot of samples in TGZ with not that high ratio (thus wont get deleted)
+						ratio < 0.8d) //or test sounds (Hertz.wav or 400Hz.wav) dont have many samples in TGZ but have high ratio
 					{
 						res.Remove(songID);
 					}

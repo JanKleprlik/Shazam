@@ -31,7 +31,7 @@ namespace Shazam
 		/// <param name="metadataPath"></param>
 		private void SaveMetadata(uint songID, string name, string author, string metadataPath = Constants.MetadataPath)
 		{
-			using (StreamWriter sr = new StreamWriter(metadataPath, true))
+			using (StreamWriter sr = new StreamWriter(metadataPath, append:true))
 			{
 				//ID;Name;Author
 				sr.WriteLine($"{songID};{name};{author}");

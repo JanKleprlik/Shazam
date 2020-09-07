@@ -98,15 +98,23 @@ namespace Shazam
 			/**/
 			#endregion
 
+			//Create file with TFPs async
+			Thread TFPSaver = new Thread(() =>
+			{
+				SaveTFPs(TimeFrequencyPoitns, maxSongID);
+			});
+			TFPSaver.Start();
+			//Save metadata async
+			Thread MetadataSaver = new Thread(() =>
+			{
+				SaveMetadata(maxSongID, name, author);
+			});
+			MetadataSaver.Start();
 			//Add TFPs to database
 			AddTFPToDatabase(TimeFrequencyPoitns, ++maxSongID);
 			//Add songs metadata to database
 			metadata.Add(maxSongID, new Song(maxSongID, name, author));
 			
-			//Create file with TFPs
-			SaveTFPs(TimeFrequencyPoitns, maxSongID);
-			//Save metadata
-			SaveMetadata(maxSongID, name, author);
 		}
 
 		/// <summary>

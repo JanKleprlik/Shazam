@@ -25,6 +25,8 @@ namespace Shazam
 			TextWriter output = Console.Out;
 			bool isDebug = false;
 
+			Thread command = null;
+
 			output.WriteLine("{1,2} {0}", "Enter 'h' or 'help' for help.","");
 			while (true)
 			{
@@ -39,7 +41,14 @@ namespace Shazam
 						string author = Console.ReadLine();
 						output.WriteLine("{1,2} {0}", "Enter name of the audio file","");
 						string path = Console.ReadLine();
-						AddSong(path, name, author, output, s);
+						if (command != null && command.IsAlive)
+							command.Join();
+						command = new Thread(() =>
+						{
+							AddSong(path, name, author, output, s);
+						});
+						command.Start();
+
 						break;
 					case "c":
 					case "clear":
@@ -78,7 +87,13 @@ namespace Shazam
 
 					case "r":
 					case "record":
-						output.WriteLine("{0,2} {1}", "", s.RecognizeSong());
+						if (command != null && command.IsAlive)
+							command.Join();
+						command = new Thread(() =>
+						{
+							output.WriteLine("{0,2} {1}", "", s.RecognizeSong());
+						});
+						command.Start();
 						break;
 
 					default:
@@ -113,8 +128,19 @@ namespace Shazam
 			}
 			catch (Exception e)
 			{
-				o.WriteLine(e.Message);
-				o.WriteLine("{0,2} {1}", "", $"Adding '{name}' was unsuccessful.");
+				if (e is FileNotFoundException)
+				{
+					o.WriteLine(e.Message);
+					o.WriteLine("File not found.");
+					o.WriteLine("{0,2} {1}", "", $"Adding '{name}' was unsuccessful.");
+				}
+				else if (e is ArgumentException)
+				{
+					o.WriteLine(e.Message);
+					o.WriteLine("{0,2} {1}", "", $"Adding '{name}' was unsuccessful.");
+				}
+				else throw e;
+
 			}
 		}
 

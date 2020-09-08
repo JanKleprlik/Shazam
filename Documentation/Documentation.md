@@ -78,7 +78,7 @@ Application is made of four main parts:
 
 ​	Song with the most time coherent notes is picked.
 
-![Song recognition](/Documentation/Images/SongRecognition.png "Song recognition path")
+![Song recognition](/Documentation/Images/SongRecognition.png "Song recognition route")
 
 ## Shazam
 
@@ -402,7 +402,7 @@ This mode draws raw audio data.
 - X axis = time
 - Y axis = sample value 
 
-![Amplitude mode](/Documentation/Images/AMPLITUDE.PNG)
+![Amplitude mode](/Documentation/Images/AMPLITUDE.PNG "Amplitude mode")
 
 ### Frequency mode
 
@@ -411,7 +411,7 @@ This mode uses FFT and draws frequency spectrum.
 - X axis = frequency (usually 0 - 24 kHz)
 - Y axis = loudness
 
-![Frequency mode](/Documentation/Images/FREQUENCIES.PNG)
+![Frequency mode](/Documentation/Images/FREQUENCIES.PNG "Frequency mode")
 
 ​	FFT is applied at every *BufferSize* samples. Then values are normalized to fit window and drawn. Frequencies go from low to high. 
 
@@ -425,7 +425,7 @@ Spectogram processes whole song at the time and then displays graph.
 - Y axis = frequency (usually 0 - 24 kHz)
 - Brightness = loudness
 
-![Spectogram](Documentation/Images/SPECTOGRAM.PNG)
+![Spectogram](/Documentation/Images/SPECTOGRAM.PNG "Spectogram mode")
 
 This is basically Frequency mode for the whole song.
 

@@ -82,7 +82,7 @@ namespace Shazam.Visualiser.MusicModes
 			for (uint i = 0; i < BufferSize / (2*downSampleCoef); i++)
 			{
 				VA[i] = new Vertex(new Vector2f((float) (i * 0.5 * downSampleCoef + 100),
-					(float) (200 - tools.GetComplexAbs(bin[2 * i], bin[2 * i + 1]) / 100000)));
+					(float) (200 - tools.GetComplexAbs(bin[2 * i], bin[2 * i + 1]) / 100000))); //100000 is to scale visualisation so it fits the window
 			}
 
 		}

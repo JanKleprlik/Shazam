@@ -17,7 +17,7 @@ namespace ShazamUnitTests.Visualiser
 			var audio = AudioReader.GetSound("Songs/Hertz.wav");
 			if (audio.Channels == 2)
 				AudioProcessor.StereoToMono(audio);
-			var window = new Visualizer(audio.Data, audio.Channels, audio.SampleRate, VisualisationModes.Frequencies);
+			var window = new global::Shazam.Visualiser.Visualiser(audio.Data, audio.Channels, audio.SampleRate, VisualisationModes.Frequencies);
 			window.Run();
 		}
 		[TestMethod]
@@ -26,7 +26,7 @@ namespace ShazamUnitTests.Visualiser
 			var audio = AudioReader.GetSound("Songs/Piano.wav");
 			if (audio.Channels == 2)
 				AudioProcessor.StereoToMono(audio);
-			var window = new Visualizer(audio.Data, audio.Channels, audio.SampleRate, VisualisationModes.Frequencies);
+			var window = new global::Shazam.Visualiser.Visualiser(audio.Data, audio.Channels, audio.SampleRate, VisualisationModes.Frequencies);
 			window.Run();
 		}
 		[TestMethod]
@@ -35,7 +35,7 @@ namespace ShazamUnitTests.Visualiser
 			var audio = AudioReader.GetSound("Songs/10500Hz.wav");
 			if (audio.Channels == 2)
 				AudioProcessor.StereoToMono(audio);
-			var window = new Visualizer(audio.Data, audio.Channels, audio.SampleRate, VisualisationModes.Frequencies);
+			var window = new global::Shazam.Visualiser.Visualiser(audio.Data, audio.Channels, audio.SampleRate, VisualisationModes.Frequencies);
 			window.Run();
 		}
 
@@ -45,7 +45,7 @@ namespace ShazamUnitTests.Visualiser
 			var audio = AudioReader.GetSound("Songs/10500Hz.wav");
 			if (audio.Channels == 2)
 				AudioProcessor.StereoToMono(audio);
-			var window = new Visualizer(audio.Data, audio.Channels, audio.SampleRate, VisualisationModes.Frequencies, downSampleCoef: 4);
+			var window = new global::Shazam.Visualiser.Visualiser(audio.Data, audio.Channels, audio.SampleRate, VisualisationModes.Frequencies, downSampleCoef: 4);
 			window.Run();
 		}
 
@@ -55,7 +55,7 @@ namespace ShazamUnitTests.Visualiser
 			var audio = AudioReader.GetSound("Songs/Hertz.wav");
 			if (audio.Channels == 2)
 				AudioProcessor.StereoToMono(audio);
-			var window = new Visualizer(audio.Data, audio.Channels, audio.SampleRate, VisualisationModes.Frequencies, downSampleCoef: 4);
+			var window = new global::Shazam.Visualiser.Visualiser(audio.Data, audio.Channels, audio.SampleRate, VisualisationModes.Frequencies, downSampleCoef: 4);
 			window.Run();
 		}
 
@@ -65,7 +65,7 @@ namespace ShazamUnitTests.Visualiser
 			var audio = AudioReader.GetSound("Songs/400Hz.wav");
 			if (audio.Channels == 2)
 				AudioProcessor.StereoToMono(audio);
-			var window = new Visualizer(audio.Data, audio.Channels, audio.SampleRate, VisualisationModes.Frequencies);
+			var window = new global::Shazam.Visualiser.Visualiser(audio.Data, audio.Channels, audio.SampleRate, VisualisationModes.Frequencies);
 			window.Run();
 		}
 
@@ -75,7 +75,7 @@ namespace ShazamUnitTests.Visualiser
 			var audio = AudioReader.GetSound("Songs/Avicii.wav");
 			if (audio.Channels == 2)
 				AudioProcessor.StereoToMono(audio);
-			var window = new Visualizer(audio.Data, audio.Channels, audio.SampleRate, VisualisationModes.Frequencies);
+			var window = new global::Shazam.Visualiser.Visualiser(audio.Data, audio.Channels, audio.SampleRate, VisualisationModes.Frequencies);
 			window.Run();
 		}
 	}

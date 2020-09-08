@@ -4,7 +4,7 @@ using SFML.Graphics;
 
 namespace Shazam.Visualiser.MusicModes
 {
-	abstract class AbstractMode : IVisualizerMode
+	abstract class AbstractMode : IVisualiserMode
 	{
 		#region Constructors
 		protected AbstractMode(SoundBuffer sb)

@@ -23,7 +23,7 @@ namespace ShazamUnitTests.Visualiser
 			if (audio.Channels == 2)
 				AudioProcessor.StereoToMono(audio);
 
-			var window = new Visualizer(audio.Data, audio.Channels, audio.SampleRate, VisualisationModes.Spectogram);
+			var window = new global::Shazam.Visualiser.Visualiser(audio.Data, audio.Channels, audio.SampleRate, VisualisationModes.Spectogram);
 			window.Run();
 		}
 
@@ -34,7 +34,7 @@ namespace ShazamUnitTests.Visualiser
 			if (audio.Channels == 2)
 				AudioProcessor.StereoToMono(audio);
 
-			var window = new Visualizer(audio.Data, audio.Channels, audio.SampleRate, VisualisationModes.Spectogram, downSampleCoef:4);
+			var window = new global::Shazam.Visualiser.Visualiser(audio.Data, audio.Channels, audio.SampleRate, VisualisationModes.Spectogram, downSampleCoef:4);
 			window.Run();
 		}
 
@@ -46,7 +46,7 @@ namespace ShazamUnitTests.Visualiser
 			if (audio.Channels == 2)
 				AudioProcessor.StereoToMono(audio);
 
-			var window = new Visualizer(audio.Data, audio.Channels, audio.SampleRate, VisualisationModes.Spectogram);
+			var window = new global::Shazam.Visualiser.Visualiser(audio.Data, audio.Channels, audio.SampleRate, VisualisationModes.Spectogram);
 			window.Run();
 		}
 
@@ -57,7 +57,7 @@ namespace ShazamUnitTests.Visualiser
 			if (audio.Channels == 2)
 				AudioProcessor.StereoToMono(audio);
 
-			var window = new Visualizer(audio.Data, audio.Channels, audio.SampleRate, VisualisationModes.Spectogram, downSampleCoef: 4);
+			var window = new global::Shazam.Visualiser.Visualiser(audio.Data, audio.Channels, audio.SampleRate, VisualisationModes.Spectogram, downSampleCoef: 4);
 			window.Run();
 		}
 
@@ -68,7 +68,7 @@ namespace ShazamUnitTests.Visualiser
 			if (audio.Channels == 2)
 				AudioProcessor.StereoToMono(audio);
 
-			var window = new Visualizer(audio.Data, audio.Channels, audio.SampleRate, VisualisationModes.Spectogram);
+			var window = new global::Shazam.Visualiser.Visualiser(audio.Data, audio.Channels, audio.SampleRate, VisualisationModes.Spectogram);
 			window.Run();
 		}
 
@@ -79,7 +79,7 @@ namespace ShazamUnitTests.Visualiser
 			if (audio.Channels == 2)
 				AudioProcessor.StereoToMono(audio);
 
-			var window = new Visualizer(audio.Data, audio.Channels, audio.SampleRate, VisualisationModes.Spectogram);
+			var window = new global::Shazam.Visualiser.Visualiser(audio.Data, audio.Channels, audio.SampleRate, VisualisationModes.Spectogram);
 			window.Run();
 		}
 		/*/

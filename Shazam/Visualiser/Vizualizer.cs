@@ -20,17 +20,17 @@ namespace Shazam.Visualiser
 		Spectogram
 	}
 
-	public class Visualizer
+	public class Visualiser
 	{
 		#region Constructors
-		public Visualizer(short[] data, uint channelCount, uint sampleRate, VisualisationModes vm, int downSampleCoef= 1)
+		public Visualiser(short[] data, uint channelCount, uint sampleRate, VisualisationModes vm, int downSampleCoef= 1)
 		{
 			soundBuffer = new SoundBuffer(data, channelCount, sampleRate);
 			visualisation = CreateMode(soundBuffer, vm, downSampleCoef);
 		}
 		#endregion
 
-		private static IVisualizerMode CreateMode(SoundBuffer sb, VisualisationModes vm, int downSampleCoef)
+		private static IVisualiserMode CreateMode(SoundBuffer sb, VisualisationModes vm, int downSampleCoef)
 		{
 			switch (vm)
 			{
@@ -45,7 +45,7 @@ namespace Shazam.Visualiser
 			}
 		}
 
-		internal readonly IVisualizerMode visualisation;
+		internal readonly IVisualiserMode visualisation;
 		private readonly SoundBuffer soundBuffer;
 
 		public void Run()

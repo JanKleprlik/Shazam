@@ -2,7 +2,7 @@
 
 namespace Shazam.Visualiser.MusicModes
 {
-	interface IVisualizerMode
+	interface IVisualiserMode
 	{
 		void Draw(RenderWindow window);
 		void Update();

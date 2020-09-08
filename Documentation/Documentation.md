@@ -40,7 +40,7 @@ Application is made of four main parts:
 
 > Average value of 512 can be switched with average value of all bins in song. However I got overall better results on testing audio with average of only 512 bins. That is because some songs have high scale of loudness. Thus some parts came up without any TFP.
 
-![Audio processing route](Documentation\Images\AudioProcessing.png "Audio processing route")
+![Audio processing route](/Documentation/Images/AudioProcessing.png "Audio processing route")
 
 ​	In the end TFPs are transformed into pairs of Addresses and SongValues. Each pair has an anchor TFP and actual TFP. For super fast lookup and comparisons Address is stored in unsigned integer and SongValue in unsigned long.
 
@@ -78,7 +78,7 @@ Application is made of four main parts:
 
 ​	Song with the most time coherent notes is picked.
 
-![Song recognition](/Documentation/Images/SongRecognition.PNG)
+![Song recognition](/Documentation/Images/SongRecognition.png "Song recognition path")
 
 ## Shazam
 

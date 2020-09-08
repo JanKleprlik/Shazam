@@ -45,7 +45,7 @@ namespace Shazam
 		/// </summary>
 		/// <param name="fingerprintPath"></param>
 		/// <returns>List of tuples of time, frequency</returns>
-		private List<Tuple<uint, uint>> LoadTFP(string fingerprintPath)
+		private List<Tuple<uint, uint>> LoadTFP(string fingerprintPath = Constants.FingerprintPath)
 		{
 			//TFPs = Time-Frequency Points
 			List<Tuple<uint, uint>> TFPs = new List<Tuple<uint, uint>>();
@@ -74,7 +74,7 @@ namespace Shazam
 		/// </summary>
 		/// <param name="metadataPath">	<para>XSV file with metadata</para>
 		///								<para>format: ID;NAME;ARTIST</para></param>
-		private void LoadMetadata(string metadataPath = Constants.FingerprintPath)
+		private void LoadMetadata(string metadataPath = Constants.MetadataPath)
 		{
 			metadata = new Dictionary<uint, Song>();
 			using (StreamReader sr = new StreamReader(metadataPath))

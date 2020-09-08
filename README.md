@@ -57,6 +57,8 @@ Makes the song recognition write additional information about the matched songs 
 
 Information such as how many important notes share or how many of those notes are time coherent with the recording. 
 
+> Note: percentage on time coherent notes can exceed 100% because of repeating parts in the song such as refrains.
+
 ![debug information](Documentation/Images/DEBUG.PNG)
 
 #### c, clear

@@ -53,6 +53,8 @@ namespace Shazam
 						songID = pair.Key;
 					}
 				}
+				if (songID != null)
+					Trace.WriteLine($"\n   Song ID: {songID} has {longestCoherency} coherent notes which is {(double)longestCoherency/ totalNotes * 100:##.###} %");
 				return songID;
 			}
 

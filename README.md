@@ -16,7 +16,7 @@ This application is a 'cheap' replica of [Shazam](https://www.shazam.com/). Esse
 
 <sup>*</sup>If you are lucky enough and the song is in the database.
 
-> On second branch called 'Datasets' I added over 12 hours of fingerprinted music. All songs can be found here on youtube [link](https://www.youtube.com/playlist?list=PLMC9KNkIncKtPzgY-5rmhvj7fax8fdxoj).
+> On second branch called 'Datasets' I added over 12 hours of fingerprinted music. All songs can be found here on youtube [link](https://www.youtube.com/playlist?list=PLH2Yh8I6hScd7gJ8Xb6YwkNphSWF-k-T3).
 >
 > Any song from that playlist should be recognised with given fingerprints.
 

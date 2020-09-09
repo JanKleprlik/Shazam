@@ -12,6 +12,8 @@
 
 This application is a 'cheap' replica of [Shazam](https://www.shazam.com/). Essentially if you play it a song, it tells you what song it is and who made it.<sup>*</sup> The song recognition is however implemented with an algorithm that searches very fast. The essence is looking for shared position of multiple important notes rather than comparing recording with each song at every possible point of time.
 
+> Best audio volume for recording is when around 500 notes are gathered (can be displayed with debug mode see Shazam guide)
+
 <sup>*</sup>If you are lucky enough and the song is in the database.
 
 > On second branch called 'Datasets' I added over 12 hours of fingerprinted music. All songs can be found here on youtube [link](https://www.youtube.com/playlist?list=PLMC9KNkIncKtPzgY-5rmhvj7fax8fdxoj).

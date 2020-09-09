@@ -119,7 +119,6 @@ namespace Shazam
 					try
 					{
 						shazam.AddNewSong("../../"+file, songID.ToString(), songID.ToString());
-						//Console.WriteLine($"   Song ID: {songID} was loaded.");
 					}
 					catch (Exception e)
 					{

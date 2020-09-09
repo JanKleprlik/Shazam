@@ -25,6 +25,9 @@ namespace Shazam
 			TextWriter output = Console.Out;
 			bool isDebug = false;
 
+			//CreateFingerprints(s);
+
+
 			Thread command = null;
 
 			output.WriteLine("{1,2} {0}", "Enter 'h' or 'help' for help.","");
@@ -101,6 +104,28 @@ namespace Shazam
 						
 				}
 				
+			}
+		}
+
+        private static void CreateFingerprints(Shazam shazam)
+        {
+	        const string folderPath = "Resources/Dataset";
+			foreach (string file in Directory.EnumerateFiles(folderPath, "*.wav"))
+			{
+				Regex rx = new Regex(@"\\(?<songID>\d+).wav"); //regex for matching songID
+
+				if (uint.TryParse(rx.Match(file).Groups["songID"].Value, out uint songID))
+				{
+					try
+					{
+						shazam.AddNewSong("../../"+file, songID.ToString(), songID.ToString());
+						//Console.WriteLine($"   Song ID: {songID} was loaded.");
+					}
+					catch (Exception e)
+					{
+						Console.WriteLine($"Song ID: {songID}; file: {file}; {e.Message}");
+					}
+				}
 			}
 		}
 

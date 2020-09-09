@@ -27,6 +27,600 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="Resources\Dataset\001.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\002.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\003.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\004.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\005.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\006.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\007.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\008.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\009.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\010.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\011.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\012.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\013.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\014.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\015.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\016.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\017.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\018.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\019.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\020.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\021.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\022.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\023.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\024.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\025.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\026.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\027.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\028.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\029.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\030.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\031.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\033.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\035.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\036.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\037.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\038.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\039.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\040.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\041.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\042.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\043.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\044.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\045.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\046.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\047.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\048.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\049.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\050.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\051.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\052.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\053.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\054.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\055.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\056.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\057.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\058.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\059.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\060.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\061.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\062.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\063.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\064.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\065.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\066.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\067.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\068.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\069.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\070.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\071.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\072.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\073.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\074.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\075.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\076.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\077.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\078.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\079.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\080.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\081.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\082.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\083.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\084.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\085.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\086.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\087.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\088.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\089.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\090.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\091.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\092.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\093.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\094.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\095.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\096.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\097.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\098.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\099.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\100.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\101.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\102.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\103.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\104.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\105.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\106.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\107.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\108.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\109.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\110.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\111.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\112.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\113.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\114.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\115.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\116.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\117.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\118.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\119.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\120.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\121.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\122.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\123.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\124.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\125.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\126.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\127.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\128.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\129.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\130.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\131.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\132.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\133.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\134.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\135.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\136.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\137.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\138.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\139.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\140.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\141.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\142.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\143.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\144.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\145.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\146.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\147.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\148.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\149.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\150.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\151.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\152.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\153.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\154.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\155.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\156.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\157.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\158.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\159.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\160.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\161.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\162.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\163.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\164.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\165.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\166.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\167.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\168.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\169.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\170.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\171.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\172.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\173.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\174.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\175.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\176.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\177.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\178.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\179.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\180.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\181.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\182.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\183.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\184.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\185.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\186.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\187.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\188.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\189.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\190.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\191.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\192.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\193.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\194.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\195.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\196.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\197.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\198.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\199.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Dataset\200.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
     <None Update="Resources\Fingerprints\1.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

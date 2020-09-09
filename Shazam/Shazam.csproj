@@ -28,7 +28,7 @@
 
   <ItemGroup>
     <None Update="Resources\Dataset\001.wav">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </None>
     <None Update="Resources\Dataset\002.wav">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>

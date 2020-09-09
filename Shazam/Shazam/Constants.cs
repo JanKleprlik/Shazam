@@ -27,7 +27,7 @@ namespace Shazam
 			/// <summary>
 			/// Obligated portion of samples in TGZ
 			/// </summary>
-			public const double SamplesInTgzCoef = 0.5;
+			public const double SamplesInTgzCoef = 0.65;
 			/// <summary>
 			/// Obligated portion of time coherent notes
 			/// </summary>

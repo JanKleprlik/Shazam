@@ -1,13 +1,196 @@
 ﻿ID;SongName;Artist
-1;Without you;Avicii
-2;A Sky Full Of Stars;Coldplay
-3;400Hz;Unknown
-4;Hertz;Unknown
-5;Havana;Camila Cabello
-6;Same Old Love;Selena Gomez
-7;If the World Was Ending;JP Saxe
-8;Summer Lullaby;ENAGE
-9;Crazy;Lost Frequencies
-10;No Sleep;Martin Garrix
-11;Pauline;Pomme
-12;Ten Feet Tall;Afrojack
+1;Shape of You;Ed Sheeran
+2;Girls Like You;Maroon 5 ft. Cardi B
+3;I Cry;Usher
+4;Smile;Katy Perry
+5;Alone In My Car; NIKI DEMAR
+6;I Should Probably Go To Bed;Dan + Shay
+7;Perfect;Ed Sheeran
+8;Rain On Me;Lady Gaga, Ariana Grande
+9;Hold Me;MASN
+10;Uptown Funk;Mark Ronson
+11;Dark Horse;Katy Perry
+12;Roar;Katy Perry
+13;Easy;Troye Sivan
+14;Intentions;Justin Bieber
+15;Gold;James Barre
+16;Let Her Go;Passenger
+17;Dedicated to You; Eleanor Kingston
+18;Sugar;Maroon 5
+19;Dusk Till Dawn;ZAYN ft. Sia
+20;Play Fight;THEY.
+21;Break My Heart;Dua Lipa
+22;The Good Life;Devon Gilfillian
+23;A Thousand Years;Christina Perri
+24;Politics & Violence;Dominic Fike
+25;The Lazy Song;Bruno Mars
+26;Shallow;Lady Gaga, Bradley Cooper
+27;Skying;Izzy Perri
+28;Watermelon Sugar;Harry Styles
+29;Never;AWGUST, Sofia Reyes
+30;New Rules;Dua Lipa
+31;Bang Bang; JessieJ, Ariana Grande, Nicki Minaj
+32;Someone Like You;Adele
+33;Memories;Maroon 5
+34;We Don't Talk Anymore;Charlie Puth
+35;Come Over; Nick Lopez
+36;Say You Won't Let Go;James Arthur
+37;Side To Side;Ariana Grande ft. Nicki Minaj
+38;been thinking;mike.
+39;Don't Start Now;Dua Lipa
+40;Dr. Dr.;Miguel Fasa
+41;Work from Home;Fifth Harmony
+42;Bags;Yaz
+43;Hello;Adelle
+44;Thinking Out Loud;Ed Sheeran
+45;white lie;contradash
+46;Physicla;Dua Lipa
+47;Without Me;Halsey
+48;Rude;MAGIC!
+49;Sad Little Rant;Natalie Carr
+50;Sing of the Times;Harry Styles
+51;Happiness;Marquette King
+52;Stuck With U;Ariana Grande & Justin Bieber
+53;Bad Romance;Lady Gaga
+54;Hate Me!;MASN
+55;thank u, next;Ariana Grande
+56;Alone;Loren Gray
+57;Rckabye;Clean Bandit
+58;Lose You To Love Me;Selena Gomez
+59;Rolling in the Deep;Adele
+60;Mama;GASHI ft. Sting
+61;Cheap Thrills; Sia ft. Sean Paul
+62;Worth It;Fifth Harmony ft.Kid Ink
+63;Water;Ryland James
+64;South of the Border;Ed Sheeran
+65;You Belong With Me;Taylor Swift
+66;Halo;Beyoncé
+67;I Hope;Gabby Barrett ft. Charlie Puth
+68;You Are The Reason;Calum Scott
+69;10,000 Hours;Dan + Shay, Justin Bieber
+70;One Moment;Sean Eversen
+71;Somebody That I Used To Know;Gotye ft. Kimbra
+72;Black Magic;Little mix
+73;7 Years;Lukas Graham
+74;That Don't Mean A Thing;Kyle Dion
+75;Look At Her Now;Selena Gomez
+76;Had Enough;Elliphant
+77;Treat You Better;Shawn Mendes
+78;Photograph;Ed Sheeran
+79;Poker Face;Lady Gaga
+80;Liar;Camila Cabello
+81;My Ex;ASHS
+82;Let Me Down Slowly;Alec Benjamin
+83;Chandelier;Sia
+84;BEFORE LOVE CAME TO KILL US;Jessie Reyez
+85;FRIENDS; Marshemllo & Anne-Marie
+86;Alone; Alan Walker & Ava Max
+87;Stressed Out;Kyle Dion
+88;comethru;Jeremy Zucker
+89;Look What You Made Me Do;Taylor Swift
+90;Body;Jordan Suaste
+91;Sorry;Justin Bieber
+92;Don't Call Me;Ariana Grande, miley Cyrus, Lana Del Rey
+93;32 Degrees;Seint Monet
+94;High Hopes;Panic! At The Disco
+95;Just Give Me A Reason;P!ink ft. Nate Ruess
+96;Attention;Charlie Puth
+97;Shameless;Camila Cabello
+98;Beating;ellipsis
+99;When I Was Your Man;Bruno Mars
+100;Say My Name;David Guetta, Bebe Rexha & J Balvin
+101;Big Girls Don't Cry; Fergie
+102;Stupid Love;Lady Gaga
+103;Locked Away;R. City ft. Adam Levine
+104;Bloom;Seint Monet
+105;Havana;Camila Cabello
+106;Into You;Ariana Grande
+107;Sweet but Psycho;Ava Max
+108;Symphony; Clean Bandit
+109;Drag Me Down;One Direction
+110;Put It On Hold;Mo'Ju
+111;When I Look At You;Miley Cyrus
+112;Counting Stars;OneRepublic
+113;I'm Not The Only One;Sam Smith
+114;I'll never Love Again;Lady Gaga
+115;Don't Wanna Know;Maroon 5 ft. Kendrick Lamar
+116;Stitches;Shawn Mendes
+117;Impossible;James Arthur
+118;no tears left to cry;Ariana Grande
+119;Locked Out Of Heaven;Bruno Mars
+120;Elastic Heart; Sia ft. Shia LaBeouf & Maddie Ziegler
+121;Story of My Life;One Direction
+122;24K Magic;Bruno Mars
+123;Let Me Love You;DJ Snake ft. Justin Bieber
+124;The One That Got Away;Katy Perry
+125;Outside;Calvin Harris ft. ellie Goulding
+126;tonight;Alaina Castillo
+127;Can't Remember to Forget You;Shakira ft. Rihanna
+128;Apologize;Timbaland ft. OneRepublic
+129;Payphone;Maroon 5 ft. Wiz Khalifa
+130;On The Floor;Jennifer Lopez ft. Pitbull
+131;Hips Don't Lie;Shakira ft. Wyclef Jean
+132;Call Me Maybe;Carly Rae Jepsen
+133;Meant to Be;Bebe Rexha ft. Florida Georgia Line
+134;There's Nothing Holdin' Me Back; Shawn Mendes
+135;I Wonder Why;Joesef, Loyle Carner
+136;IDGAF;Dua Lipa
+137;What Makes You Beautiful;One Direction
+138;Send My Love;Adele
+139;Stay;Rihanna ft. Mikky Ekko
+140;What Lovers Do;Maroon 5 ft. SZA
+141;Blurred Lines;Robin Thicke ft. T.I., Pharrell
+142;La la la;Naughty Boy ft. Sam Smith
+143;in the now;kai
+144;Firework;Katy Perry
+145;Dangerous Woman;Ariana Grande
+146;overrated;BLXST
+147;Too Good At Goodbyes;Sam Smith
+148;Love Story;Taylor Swift
+149;All About That Bass;Meghan Trainor
+150;Bad Blood;Taylor Swift ft. Kendrick Lamar
+151;Bon Appétit;Katy Perry ft. Migos
+152;California Gurls;Katy Perry ft. Snoop Dogg
+153;You & I;One Direction
+154;Part Of Me;Katy Perry
+155;Be The One;Dua Lipa
+156;Hot N Cold;Katy Perry
+157;Buttons;The Pussycat Dolls ft. Snoop Dogg
+158;Solo;Clean Bandit ft. Demi Lovato
+159;Like I'm Gonna Lose You;Meghan Trainor
+160;Hold On;Chord Overstreet
+161;Someone To You;BANNERS
+162;The Greatest;Sia
+163;Blank Space;Taylor Swift
+164;Love Me Like You Do;Ellie Goulding
+165;Never Say Never;Justing Bieber ft. Jaden Smith
+166;Say Something;A Great Big World, Christina Aguilera
+167;Power;Little Mix ft. Stormzy
+168;She Will Be Loved;Maroon 5
+169;What Do You Mean?;Justin Bieber
+170;Love Me Again;John Newman
+171;Price Tag;Jessie J ft. B.o.B
+172;Shake It Off;Talyor Swift
+173;Toxic;Britney Spears
+174;Grenade;Bruno Mars
+175;Diamonds;Rihanna
+176;Lady Marmalade;Christina Aguilera, Lil' Kim, Mya, P!nk
+177;Problem;Ariana Grande ft. Iggy Azalea
+178;Ain't Your Mama;Jennifer Lopez
+179;2002;Anne-Marie
+180;Swish Swish;Katy Perry
+181;Me and My Broken Heart;Rixton
+182;Bad Things;Machine Gun Kelly, Camila Cabello
+183;Wildest Dreams;Taylor Swift
+184;Secret Love Song;Little Mix ft. Jason
+185;Wrecking Ball;Miley Cyrus
+186;What's My Name?;Rihanna ft. Drake
+187;God is a woman;Ariana Grande
+188;I'm Yours;Jason Mraz
+189;Whenever,Whenever;Shakira
+190;Flashlight;Jessie J
+191;Me Too;Meghan Trainor
+192;Just The Way You Are;Bruno Mars
+193;Love Yourself;Justin Bieber
+194;Fight Song;Rachel Platten
+195;Moves Like Jagger;Maroon 5 ft. Christina Aguilera

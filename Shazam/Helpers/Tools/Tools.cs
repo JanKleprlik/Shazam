@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 using System.Text;
 using Shazam.Extensions;
 
@@ -9,7 +10,10 @@ namespace Shazam.Tools
 	{
 		public static double GetComplexAbs(double real, double img)
 		{
-			return Math.Sqrt(real.Pow2() + img.Pow2());
+            Contract.Ensures(Contract.Result<double>() >= real);
+            Contract.Ensures(Contract.Result<double>() >= img);
+            
+            return Math.Sqrt(real.Pow2() + img.Pow2());
 		}
 
 		public static bool IsPowOfTwo(int n)

@@ -1,5 +1,7 @@
-﻿using System;
+﻿#define CONTRACTS_FULL
+using System;
 using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 using System.Numerics;
 using System.Text;
 using Shazam.Extensions;
@@ -16,6 +18,8 @@ namespace Shazam.AudioProcessing
 		/// <returns></returns>
 		public static Complex[] DFT_Recurr(Complex[] data)
 		{
+			Contract.Requires(data.Length % 2 == 0);
+
 			int n = data.Length;
 
 			if (n == 1)
@@ -58,6 +62,8 @@ namespace Shazam.AudioProcessing
 		/// <param name="data"></param>
 		public static void DFT(Complex[] data)
 		{
+			Contract.Requires(data.Length % 2 == 0);
+            
 			int n = data.Length;
 			double alpha;
 			Complex[] bin = new Complex[n];
@@ -90,6 +96,8 @@ namespace Shazam.AudioProcessing
 		/// <exception cref="ArgumentException">data length is not power of two</exception>
 		public static void FFT(double[] data, bool normalize = false)
 		{
+			Contract.Requires(data.Length % 2 == 0);
+            
 			int n = data.Length;
 			if (!Tools.Tools.IsPowOfTwo(n))
 				throw new ArgumentException($"Data length: {n} is not power of two.");
@@ -190,6 +198,8 @@ namespace Shazam.AudioProcessing
 		/// <param name="data"></param>
 		private static void Normalize(double[] data)
 		{
+			Contract.Requires(data.Length % 2 == 0);
+
 			int n = data.Length / 2; //div 2 because of Re+Img
 			for (int i = 0; i < data.Length; i++)
 			{

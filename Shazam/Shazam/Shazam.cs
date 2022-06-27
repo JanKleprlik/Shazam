@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Diagnostics;
+using System.Diagnostics.Contracts;
 using System.IO;
 using System.Runtime.CompilerServices;
 using System.Threading;
@@ -124,8 +125,9 @@ namespace Shazam
 		/// <returns></returns>
 		public string RecognizeSong()
 		{
-			//recording of the song
-			double[] data = RecordAudio(10000);
+            Contract.Ensures(Contract.Result<string>() != null);
+            //recording of the song
+            double[] data = RecordAudio(10000);
 			
 			//measure time of song searching
 			Stopwatch stopwatch = Stopwatch.StartNew();

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Diagnostics.Contracts;
 using System.Runtime.CompilerServices;
 using System.Threading;
 using System.Threading.Tasks;
@@ -66,7 +67,12 @@ namespace Shazam
 		/// <returns></returns>
 		private List<Tuple<uint, uint>> CreateTimeFrequencyPoints(int bufferSize, double[] data, double sensitivity = 0.9)
 		{
-			List<Tuple<uint, uint>> TimeFrequencyPoitns = new List<Tuple<uint, uint>>();
+            Contract.Requires(bufferSize > 0);
+            Contract.Requires(data != null);
+            Contract.Requires(sensitivity > 0);
+            Contract.Requires(sensitivity <= 1);
+
+            List<Tuple<uint, uint>> TimeFrequencyPoitns = new List<Tuple<uint, uint>>();
 			double[] HammingWindow = AudioProcessor.GenerateHammingWindow(bufferSize);
 			double Avg = 0d;// = GetBinAverage(data, HammingWindow);
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿#define CONTRACTS_FULL
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
@@ -10,6 +11,7 @@ using System.Text;
 using Shazam.AudioFormats;
 using Shazam.Tools;
 using Complex = System.Numerics.Complex;
+using System.Diagnostics.Contracts;
 
 namespace Shazam.AudioProcessing.Server
 {
@@ -22,6 +24,8 @@ namespace Shazam.AudioProcessing.Server
 		/// <returns>Audio format with parsed information</returns>
 		public static IAudioFormat GetSound(string path)
 		{
+			Contract.Requires(path.EndsWith(".mp3"));
+            
 			byte[] data = File.ReadAllBytes(path);
 			IAudioFormat Sound;
 

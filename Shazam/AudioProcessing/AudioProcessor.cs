@@ -8,6 +8,7 @@ using Shazam.AudioFormats;
 using Shazam.AudioProcessing.Server;
 using Shazam.Extensions;
 using Shazam.Visualiser;
+using System.Diagnostics.Contracts;
 
 namespace Shazam.AudioProcessing
 {
@@ -19,7 +20,16 @@ namespace Shazam.AudioProcessing
 		/// <param name="audio"></param>
 		public static void StereoToMono(IAudioFormat audio)
 		{
-			IsSupportedFormat(audio);
+            Contract.Requires(audio.Channels == 2);
+            Contract.Requires(audio.Data.Length % 2 == 0);
+            Contract.Requires(audio.Data.Length == audio.NumOfDataSamples);
+            Contract.Ensures(audio.Channels == 1);
+            Contract.Ensures(audio.Data.Length % 2 == 0);
+            Contract.Ensures(audio.Data.Length * 2 == Contract.OldValue(audio.Data.Length));
+            Contract.Ensures(audio.NumOfDataSamples * 2== Contract.OldValue(audio.Data.Length));
+            Contract.Ensures(audio.NumOfDataSamples == audio.Data.Length);
+
+            IsSupportedFormat(audio);
 
 			if (audio.Channels != 2)
 				throw new ArgumentException($"Audio is not stereo.\n Actual number of channels: {audio.Channels}");

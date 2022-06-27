@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics.Contracts;
 using System.IO;
 using System.Runtime.CompilerServices;
 
@@ -15,7 +16,9 @@ namespace Shazam.Extensions
 		/// <returns>Value 2</returns>
 		public static T Swap<T>(this T first, ref T second)
 		{
-			T tmp = second;
+            Contract.Ensures(first.Equals(Contract.OldValue(second)));
+
+            T tmp = second;
 			second = first;
 			return tmp;
 		}

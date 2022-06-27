@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 using System.Security.Cryptography;
 using System.Text;
 
@@ -12,7 +13,10 @@ namespace Shazam.Tools
 	{
 		public static short BytesToShort(byte[] bytes)
 		{
-			if (bytes.Length != 2)
+            Contract.Requires(bytes != null);
+            Contract.Requires(bytes.Length == 2);
+
+            if (bytes.Length != 2)
 				throw new ArgumentException($"Exactly 2 bytes requiered, got {bytes.Length} bytes.");
 			short res = bytes[1];
 			res = (short)(res << 8);
@@ -22,6 +26,9 @@ namespace Shazam.Tools
 
 		public static int BytesToInt(byte[] bytes)
 		{
+			Contract.Requires(bytes != null);
+			Contract.Requires(bytes.Length == 4);
+            
 			if (bytes.Length != 4)
 				throw new ArgumentException($"Exactly 4 bytes requiered, got {bytes.Length} bytes.");
 			int res = bytes[3];

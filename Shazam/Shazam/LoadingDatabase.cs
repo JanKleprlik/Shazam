@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Diagnostics.Contracts;
 using System.IO;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -16,7 +17,9 @@ namespace Shazam
 		/// <param name="folderPath">Folder with fingerprints</param>
 		private void LoadFingerprints(string folderPath)
 		{
-			database = new Dictionary<uint, List<ulong>>();
+            Contract.Requires<ArgumentNullException>(folderPath != null);
+
+            database = new Dictionary<uint, List<ulong>>();
 			foreach (string file in Directory.EnumerateFiles(folderPath, "*.txt"))
 			{
 				Regex rx = new Regex(@"\\(?<songID>\d+).txt"); //regex for matching songID
